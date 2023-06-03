@@ -31,6 +31,9 @@
     "migrate": "knex migrate:latest --knexfile ./knexfile.js",
     "seed": "knex seed:run --knexfile ./knexfile.js"
   },
+  "husky": {
+    "pre-commit": "pretty-quick --staged"
+  },
   "author": "",
   "license": "ISC",
   "browserslist": {
