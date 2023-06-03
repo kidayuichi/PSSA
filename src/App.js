@@ -15,6 +15,7 @@ function App() {
   console.log(process.env.DB_NAME);
   console.log(process.env.DB_USERNAME);
   console.log(process.env.DB_PASSWORD);
+  console.log(process.env.DATABASE_URL);
   // useState
   const [damage, damageSet] = useState("0");
   const [energyCost, energyCostSet] = useState("");

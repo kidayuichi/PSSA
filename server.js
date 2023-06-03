@@ -6,11 +6,11 @@ const cors = require("cors");
 // const knex = require('./db/knex');
 const knex = require("knex")({
   client: "pg",
-  connection: {
-    host: "127.0.0.1",
+  connection: process.env.DATABASE_URL || {
+    host: "dpg-chthqdl269vccp5m5be0-a",
     user: "user",
     password: "user",
-    database: "pokemonsearch",
+    database: "pokemonsearch_jxkd",
   },
 });
 const app = express()
