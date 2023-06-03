@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/button.css";
 
-const URL = process.env.DATABASE_URL ? process.env.DATABASE_URL:"http://localhost:8080"
+const URL = process.env.NODE_ENV ? "https://pokeka-search-support-app-front-q5mx.onrender.com":"http://localhost:8080"
 
 export default function Button(props) {
   const getAllPoke = async () => {
