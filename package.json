@@ -49,12 +49,12 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.10",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
-    "eslint": "^6.1.0",
+    "eslint": "^8.42.0",
     "husky": "^3.0.1",
     "mocha": "^6.2.0",
-    "nodemon": "^2.0.22",
-    "@babel/plugin-proposal-private-property-in-object":"^7.21.10"
+    "nodemon": "^2.0.22"
   }
 }
