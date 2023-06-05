@@ -1,0 +1,22 @@
+.link-containerButton {
+    display: flex;
+    position: fixed;
+    top: 2.5%;
+    left: 64%;
+    width: 100%;
+    background-color: #000000;
+    padding: 10px;
+    z-index: 3;
+  }
+    
+  .linkButton {
+    flex-basis: calc(100% / 20); /* リンクの数に応じて割合を調整 */
+    margin-right: 10px;
+  }
+  .linkButton a {
+    color: white;
+  }
+
+  .linkButton:last-child {
+    margin-right: 0; /* 最後のリンクの右側のマージンを削除 */
+  }

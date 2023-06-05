@@ -17,13 +17,17 @@ export default function Button(props) {
 
   return (
     <>
-      <div>
+      <div className='link-containerButton'>
+        <div className='linkButton'>
         <button className="search" id="search" onClick={getAllPoke}>
           検索
         </button>
+        </div>
+        <div className='linkButton'>
         <button className="reset" id="reset">
           リセット
         </button>
+</div>
       </div>
     </>
   );

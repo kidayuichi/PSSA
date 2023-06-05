@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+html {
+  font-family: "Noto Sans JP",Meiryo,メイリオ,Osaka,"MS PGothic",arial,helvetica,sans-serif;
+  font-size: 90%
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100vh;
+  padding-top: 100%;
+  margin: 0;
+  background-image: url('./img/backgroundPicture.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: fixed;
+  top: 2.5%;
+  left: 20%;
+  width: 80%;
+  background-color: #000000;
+  padding: 10px;
+  z-index: 100;
+}
+
+.link {
+  flex-basis: calc(100% / 15); /* リンクの数に応じて割合を調整 */
+  margin-right: 10px;
+}
+.link a {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.link:last-child {
+  margin-right: 0; /* 最後のリンクの右側のマージンを削除 */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pic {
+  position: absolute;
+  top: 670px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }

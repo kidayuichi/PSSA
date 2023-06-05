@@ -31,8 +31,8 @@ export default function SkillType(props) {
         <option value="5">5</option>
       </select>
 
-      <img src={`${process.env.PUBLIC_URL}/images/1_grass.png`} />
-      <img src={`${process.env.PUBLIC_URL}/images/2_fire.png`} />
+      {/* <img src={`${process.env.PUBLIC_URL}/images/1_grass.png`} />
+      <img src={`${process.env.PUBLIC_URL}/images/2_fire.png`} /> */}
     </>
   );
 }

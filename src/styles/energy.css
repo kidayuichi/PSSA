@@ -1,0 +1,23 @@
+
+.link-containerEne {
+    display: flex;
+    position: fixed;
+    top: 2.5%;
+    left: 43%;
+    width: 100%;
+    background-color: #000000;
+    padding: 10px;
+    z-index: 2;
+  }
+    
+  .linkEne {
+    flex-basis: calc(100% / 11); /* リンクの数に応じて割合を調整 */
+    margin-right: 10px;
+  }
+  .linkEne a {
+    color: white;
+  }
+
+  .linkEne:last-child {
+    margin-right: 0; /* 最後のリンクの右側のマージンを削除 */
+  }
