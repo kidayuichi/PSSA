@@ -3,9 +3,9 @@ import "../styles/Attack.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import Damage from "./Damage"; //ダメージを記入する欄
-import Energy from "./Energy"; //消費エネルギー数を指定する欄
-import Button from "./Button"; //検索ボタン
+import Damage from "./Damage";
+import Energy from "./Energy";
+import Button from "./Button";
 
 const URL = process.env.NODE_ENV
   ? "https://pssa2-front.onrender.com"
@@ -16,8 +16,8 @@ export default function Attack() {
   const [energyCost, energyCostSet] = useState("");
   const [skillType, skillTypeSet] = useState("");
   const [skillTypeNum, skillTypeNumSet] = useState("");
-  const [pokeData, setPokeData] = useState([]); // APIから取得したデータを格納する
-  const [showTable, setShowTable] = useState(false); // テーブル表示フラグ
+  const [pokeData, setPokeData] = useState([]);
+  const [showTable, setShowTable] = useState(false);
 
   const tableDel = () => {
     setShowTable(false);
@@ -29,13 +29,13 @@ export default function Attack() {
     const objectData = await pokeArray.json();
     objectData.sort((a, b) => a.id - b.id);
     setPokeData(objectData);
-    setShowTable(true); // テーブル表示フラグを更新
+    setShowTable(true);
     console.log(objectData);
   };
 
   const tableMake = () => {
     if (!showTable) {
-      return null; // テーブル非表示の場合はnullを返す
+      return null;
     }
 
     return (

@@ -16,7 +16,7 @@ function App() {
   const [energyCost, energyCostSet] = useState("");
   const [skillType, skillTypeSet] = useState("");
   const [skillTypeNum, skillTypeNumSet] = useState("");
-  const [resultNum, resultNumSet] = useState(""); //検索件数を出力
+  const [resultNum, resultNumSet] = useState("");
 
   const settings = {
     dots: true,
@@ -28,7 +28,7 @@ function App() {
     autoplaySpeed: 4000,
     cssEase: "linear",
     centerMode: true,
-    centerPadding: "520px", // スライド間の余白
+    centerPadding: "520px",
   };
 
   useEffect(() => {}, []);
