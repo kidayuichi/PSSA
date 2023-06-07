@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import React, { useEffect, useState, useRef } from "react";
 
-const URL = process.env.DATABASE_URL
+const URL = process.env.NODE_ENV
   ? "https://pssa2-front.onrender.com"
   : "http://localhost:8080";
 

@@ -7,7 +7,7 @@ import Damage from "./Damage"; //ダメージを記入する欄
 import Energy from "./Energy"; //消費エネルギー数を指定する欄
 import Button from "./Button"; //検索ボタン
 
-const URL = process.env.DATABASE_URL
+const URL = process.env.NODE_ENV
   ? "https://pssa2-front.onrender.com"
   : "http://localhost:8080";
 
