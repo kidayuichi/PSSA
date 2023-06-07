@@ -1,0 +1,41 @@
+[
+  {
+    "cardID": 40072,
+    "name": "カイオーガ",
+    "cardURL": "https://www.pokemon-card.com/card-search/details.php/card/40072/regu/XY",
+    "Attack1name": "なみのり",
+    "Attack1damage": "120",
+    "Attack1energy1": "icon-water icon",
+    "Attack1energy2": "icon-water icon",
+    "Attack1energy3": "icon-none icon",
+    "Attack1energy4": "icon-none icon",
+    "Attack1energy5": "",
+    "cardID2": "S8a-007/028"
+  },
+  {
+    "cardID": 42315,
+    "name": "ミュウVMAX",
+    "cardURL": "https://www.pokemon-card.com/card-search/details.php/card/42315/regu/XY",
+    "Attack1name": "ダイミラクル",
+    "Attack1damage": "130",
+    "Attack1energy1": "icon-psychic icon",
+    "Attack1energy2": "icon-psychic icon",
+    "Attack1energy3": "",
+    "Attack1energy4": "",
+    "Attack1energy5": "",
+    "cardID2": "S12a-054/172"
+  },
+  {
+    "cardID": 42302,
+    "name": "ゼラオラVMAX",
+    "cardURL": "https://www.pokemon-card.com/card-search/details.php/card/42301/regu/XY",
+    "Attack1name": "ダイフィスト",
+    "Attack1damage": "240",
+    "Attack1energy1": "icon-electric icon",
+    "Attack1energy2": "icon-electric icon",
+    "Attack1energy3": "icon-none icon",
+    "Attack1energy4": "",
+    "Attack1energy5": "",
+    "cardID2": "S12a-041/172"
+  }
+]

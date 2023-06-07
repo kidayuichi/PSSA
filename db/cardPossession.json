@@ -1,0 +1,32 @@
+[
+  {
+    "userNameID": 1,
+    "possessionCardID": "S8a-007/028",
+    "cardNum": 5
+  },
+  {
+    "userNameID": 1,
+    "possessionCardID": "S12a-054/172",
+    "cardNum": 4
+  },
+  {
+    "userNameID": 1,
+    "possessionCardID": "S12a-041/172",
+    "cardNum": 3
+  },
+  {
+    "userNameID": 2,
+    "possessionCardID": "S8a-007/028",
+    "cardNum": 3
+  },
+  {
+    "userNameID": 2,
+    "possessionCardID": "S12a-054/172",
+    "cardNum": 2
+  },
+  {
+    "userNameID": 2,
+    "possessionCardID": "S12a-041/172",
+    "cardNum": 1
+  }
+]
