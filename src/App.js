@@ -11,6 +11,7 @@ import Attack from "./components/Attack";
 import Login from "./components/login";
 
 function App() {
+  console.log(process.env);
   const [damage, damageSet] = useState("0");
   const [energyCost, energyCostSet] = useState("");
   const [skillType, skillTypeSet] = useState("");

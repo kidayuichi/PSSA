@@ -8,7 +8,7 @@ import Energy from "./Energy"; //消費エネルギー数を指定する欄
 import Button from "./Button"; //検索ボタン
 
 const URL = process.env.DATABASE_URL
-  ? "https://pokeka-search-support-app-front-q5mx.onrender.com"
+  ? "https://pssa2-front.onrender.com"
   : "http://localhost:8080";
 
 export default function Attack() {

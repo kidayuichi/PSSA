@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import React, { useEffect, useState, useRef } from "react";
 
 const URL = process.env.DATABASE_URL
-  ? "https://pokeka-search-support-app-front-q5mx.onrender.com"
+  ? "https://pssa2-front.onrender.com"
   : "http://localhost:8080";
 
 export default function CardDataInput() {
