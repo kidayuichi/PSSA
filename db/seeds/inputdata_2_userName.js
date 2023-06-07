@@ -2,7 +2,7 @@ const inputJSON = require("../userName.json");
 
 exports.seed = function (knex, Promise) {
   return knex
-    .raw("SET FOREIGN_KEY_CHECKS = 0;")
+    .raw('ALTER TABLE "userName" DISABLE TRIGGER ALL;')
     .then(() => {
       return knex("userName").del();
     })
@@ -10,6 +10,6 @@ exports.seed = function (knex, Promise) {
       return knex("userName").insert(inputJSON);
     })
     .finally(() => {
-      return knex.raw("SET FOREIGN_KEY_CHECKS = 1;");
+      return knex.raw('ALTER TABLE "userName" ENABLE TRIGGER ALL;');
     });
 };
