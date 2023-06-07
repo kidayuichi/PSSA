@@ -1,0 +1,16 @@
+.cardDataOutputZone {
+  display: flex;
+  position: fixed;
+  height: 400px;
+  width: 1050px;
+  top: 280px;
+  left: 800px;
+  background-color: #f36363;
+  padding: 10px;
+  z-index: 12;
+}
+
+.getMyCard {
+  width: 200px;
+  height: 50px;
+}

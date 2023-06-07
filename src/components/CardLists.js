@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import CameraComponent from "./CameraComponent";
 import CardDataInput from "./CardDataInput";
+import CardDataOutput from "./CardDataOutput";
 
 export default function CardLists() {
   return (
@@ -20,7 +21,9 @@ export default function CardLists() {
       <div className="cardDataInputZone">
         <CardDataInput />
       </div>
-      <div className="cardDataOutputZone"></div>
+      <div className="cardDataOutputZone">
+        <CardDataOutput />
+      </div>
     </>
   );
 }
