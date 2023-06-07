@@ -69,6 +69,6 @@ body {
   margin-right: 0; /* 最後のスライダーの右側のマージンを削除 */
 }
 
-p {
-  width: 50px; /* 50pxの間隔を作成 */
+.homeLink {
+  width: 220px;
 }

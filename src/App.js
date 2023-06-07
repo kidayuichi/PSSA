@@ -40,7 +40,7 @@ function App() {
           element={
             <>
               <div className="HomeButton">
-                <Link to="/">sssssssssssssssssssssssssssssss</Link>
+                <Link className="homeLink" to="/"></Link>
               </div>
               <div className="link-container">
                 <div className="link">

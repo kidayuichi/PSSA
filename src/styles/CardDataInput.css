@@ -1,0 +1,15 @@
+.dataInputCol {
+  display: flex;
+  align-items: center;
+
+  position: fixed;
+  height: 60px;
+  width: 300px;
+  top: 140px;
+  left: 800px;
+  padding: 10px;
+  z-index: 10;
+}
+p {
+  width: 200px;
+}

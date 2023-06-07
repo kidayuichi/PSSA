@@ -105,7 +105,7 @@ export default function Attack() {
   return (
     <>
       <div className="HomeButton">
-        <Link to="/">sssssssssssssssssssssssssssssss</Link>
+        <Link className="homeLink" to="/"></Link>
       </div>
 
       <div className="link-container">
@@ -126,7 +126,6 @@ export default function Attack() {
           <Button getAllPoke={getAllPoke} tableDel={tableDel} />
         </div>
         <div id="table-container">{tableMake()}</div>
-        {tableMake()}
       </div>
     </>
   );

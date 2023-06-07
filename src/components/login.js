@@ -8,7 +8,7 @@ export default function login() {
   return (
     <>
       <div className="HomeButton">
-        <Link to="/">sssssssssssssssssssssssssssssss</Link>
+        <Link className="homeLink" to="/"></Link>
       </div>
     </>
   );

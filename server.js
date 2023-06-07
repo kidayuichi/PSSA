@@ -9,7 +9,7 @@ const knex = require("knex")({
     host: "127.0.0.1",
     user: "user",
     password: "user",
-    database: "pokemonsearch",
+    database: "pokemon",
   },
 });
 const app = express();
@@ -24,7 +24,7 @@ app.use(cors());
 app.get("/api/poke", async (req, res) => {
   console.log("get受信");
   const AllPokemon = () => {
-    return knex.select("*").from("pokemon").limit(100);
+    return knex.select("*").from("poke").limit(100);
   };
 
   const AllPokemonObj = await AllPokemon();

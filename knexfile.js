@@ -25,7 +25,7 @@ module.exports = {
     connection: {
       host: process.env.DB_HOST || "127.0.0.1",
       port: process.env.DB_PORT || 5432,
-      database: process.env.DB_NAME || "pokemonsearch",
+      database: process.env.DB_NAME || "pokemon",
       user: process.env.DB_USERNAME || "user",
       password: process.env.DB_PASSWORD || "user",
     },
