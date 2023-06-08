@@ -48,15 +48,17 @@ export default function CardDataOutput() {
       <button className="getMyCard" onClick={getMyCard}>
         手持ちカード表示
       </button>
-      <table className="myCardTable">
-        <tbody>
-          <tr className="headline">
-            <th className="cardID">ID</th>
-            <th className="cardNum">枚数</th>
-          </tr>
-          {elementsArr}
-        </tbody>
-      </table>
+      <div className="cardTable">
+        <table className="myCardTable">
+          <tbody>
+            <tr className="headline">
+              <th className="cardID">ID</th>
+              <th className="cardNum">枚数</th>
+            </tr>
+            {elementsArr}
+          </tbody>
+        </table>
+      </div>
     </>
   );
 }

@@ -5,7 +5,7 @@
   width: 1050px;
   top: 280px;
   left: 800px;
-  background-color: #f36363;
+  /* background-color: #f36363; */
   padding: 10px;
   z-index: 12;
 }
@@ -13,4 +13,60 @@
 .getMyCard {
   width: 200px;
   height: 50px;
+  margin-right: 10px;
+}
+
+.cardTable {
+  overflow: auto;
+  width: 90%;
+  height: 200px;
+}
+
+.myCardTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.myCardTable th:first-child {
+  border-radius: 5px 0 0 0;
+}
+
+.myCardTable th:last-child {
+  border-radius: 0 5px 0 0;
+  border-right: 1px solid #3c6690;
+}
+
+.myCardTable th {
+  text-align: center;
+  color: white;
+  background: linear-gradient(#829ebc, #225588);
+  border-left: 1px solid #3c6690;
+  border-top: 1px solid #3c6690;
+  border-bottom: 1px solid #3c6690;
+  box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+  width: 25%;
+  padding: 10px 0;
+}
+
+.myCardTable td {
+  text-align: center;
+  border-left: 1px solid #a8b7c5;
+  border-bottom: 1px solid #a8b7c5;
+  border-top: none;
+  box-shadow: 0px -3px 5px 1px #eee inset;
+  width: 25%;
+  padding: 10px 0;
+}
+
+.myCardTable td:last-child {
+  border-right: 1px solid #a8b7c5;
+}
+
+.myCardTable tr:last-child td:first-child {
+  border-radius: 0 0 0 5px;
+}
+
+.myCardTable tr:last-child td:last-child {
+  border-radius: 0 0 5px 0;
 }
