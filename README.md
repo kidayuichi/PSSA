@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# Pokeka-search-support-app-ver2.0
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ポケモンカードゲームライフを補助してくれるアプリ。
+出来ること
+コンテンツ 1：
+　手持ちのカードの一覧作成補助
 
-## Available Scripts
+コンテンツ 2：
+　ポケモンカードの技のダメージと必要なエネルギーの数、種類でカードを検索、ソートが可能。
+　ゲームトレーナーズウェブサイトで検索できない条件で検索を出来るようにするサポートアプリ。
 
-In the project directory, you can run:
+参考：https://www.pokemon-card.com/card-search/index.php?keyword=&se_ta=&regulation_sidebar_form=XY&pg=&illust=&sm_and_keyword=true
 
-### `npm start`
+## インストール
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+フロントエンド、バックエンド共に各フォルダへ移動し下記コマンドを実行。
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+$ git clone https://github.com/your-username/your-project.git
+$ cd your-project
+$ npm install
+```
 
-### `npm test`
+### migrate & seed
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+下記コマンドを実行
 
-### `npm run build`
+```bash
+$ npm run migrate
+$ npm run seed
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 使い方
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+フロントエンド、バックエンド共にサーバーを起動。
+フロントエンド：
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+$ npm start
+```
 
-### `npm run eject`
+バックエンド：
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+$ npm s-start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##### 機能
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+コンテンツ 1
+１：フロントエンドのトップページへ移動。
+２：画面上部のリンクの中から、「俺のカード」をクリック。
+３：カード ID と枚数を入力。
+４：自分のデータに対し実施したい処理ボタンを押す。追加、置換、削除。
+５：手持ちカード表示ボタンを押すとカード一覧を表示。
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+コンテンツ 2
+１：フロントエンドのトップページへ移動。
+２：画面上部のリンクの中から、「技検」をクリック。
+３：検索ボタンクリックで結果一覧を表示。
 
-## Learn More
+プロジェクト詳細(MIRO)
+https://miro.com/app/board/uXjVMcZmjS4=/#tpicker-content
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+技術スタック
+・Express
+・React
+・Knex
+・PostgreSQL
+・Render.com
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+テクノロジー
 
-### Code Splitting
+プログラミング言語:JavaScript
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+フレームワークとライブラリ:
+フロントエンド: React
+バックエンド: Express
 
-### Analyzing the Bundle Size
+データベース:PostgreSQL
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+バージョン管理システム:Git
 
-### Making a Progressive Web App
+テストフレームワークとツール:Mocha、Chai 　　仮
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+パッケージマネージャー:npm
 
-### Advanced Configuration
+統合開発環境（IDE）:Visual Studio Code
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+memo
+クラウドプラットフォーム:Amazon Web Services (AWS)、Microsoft Azure、Google Cloud Platform など
+プロジェクト管理ツール:Jira、Trello、Asana など
+デプロイメントツール:Docker、Kubernetes、Jenkins、Travis CI など
 
-### Deployment
+ライセンス
+利用許諾条件：関係者のみ使用可能。
+免責事項：自己責任で使用する。
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+貢献
+追加で期待する機能については slack で要望できる。
+また、作成協力はいつでも可能。
 
-### `npm run build` fails to minify
+問い合わせ先
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+クレジット
+Presented by kida @ Wimbledon
