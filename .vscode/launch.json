@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "name": "Cloud Run: Run/Debug Locally",
+      "type": "cloudcode.cloudrun",
+      "request": "launch",
+      "build": {
+        "docker": {
+          "path": "google-cloud-sdk/platform/ext-runtime/nodejs/data/Dockerfile"
+        }
+      },
+      "image": "PSSA",
+      "service": {
+        "name": "pssa2",
+        "containerPort": 8080,
+        "resources": {
+          "limits": {
+            "memory": "256Mi"
+          }
+        }
+      },
+      "target": {
+        "minikube": {}
+      },
+      "watch": true,
+      "externalPortForward": 3000
+    }
+  ]
+}

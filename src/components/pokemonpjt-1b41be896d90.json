@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "pokemonpjt",
+  "private_key_id": "1b41be896d902ba2a8ffe8339b53beb942cc58a6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQDKi2NygGzVKqHb\nGNv9G7mhDGw6gSM8XL0m9uBsHfnGckYJN33FGleMqEDSOgGantM6oXmUdGb9/vXn\npzLYe2yj0zAtT9HMt6ltb8IGvbr0dXOKX4k5yqy7teKjWI30UGIvVbXVx+cAx4MG\nPemBD7nJwsnLmYtx8b38p4CaGzBRDwW3ghRfhqrAbExkCznQxSnSGhEkPB3JP1xz\nhBbxY6G5re0OCp8TAvX9LIeHJnKWnZOd/LHVKavvZkBaS0vzNvxxoYzK/8lkFGjB\nZv/z9nLrprRCIBY7d7b6mL1OTOOGiRXFG3H9B4kR3RrKu9lgoAV8ASieGkDUJSfc\n1z6G+FpBAgMBAAECgf8BYnKLldUon+H7XXAjisz6DNuwirFy+C9S1N0z4ACVGrLf\n3UE+169BhuTqivr3054eCHyMRz9s/RExRDNUx4M2m3r41FLa02aVGO56nVFp2mOv\nzndhrcEAh33FIBXYVbRWHn/ftj4eAz8iC8pM146tkmdOvP33CXADCiIW65io9S4z\nxRMSRvRbjUeEHKDtY3FSoQZ5YguB0tfMo68Wh8lksgM80ptgpfaAj+jrkTtVGJIe\nzu5qZiGDGfmr11RMG5pQyOPA1T+u8qpBoyy0byzhwQVSnNbnbDb/8oTbJgNUoGNC\nak2ZK0Fm3vRUYE1Dv/aswsRx+hemDQ3zZPsbrhECgYEA++wXyxhw1e/HXKbBdTRl\nzOVoSSKwO0v406sn6CEDXySEvPIlyNaUSjhryHkNCvqFYT9TOIrT4aiOulzX4xPI\nOc+MycOCz4G1Pir3S5y3wUi0wWRuDyupfzr3IW0jbM9MQ3aQug7jCRjtHV6+mtL4\nwQhao0sJ79K1Q5VU4rvBnakCgYEAzdKvhROkU2H+nKiiUSwpPgbIAg72zf435IHM\nVrEE4AWAFViN3YTPKAo7U+zemtndN0vGfRoF10lrpzzhC3rrFvutmObqZTNQw47C\n7/4rp/Zt56WaTcThZ6foAciqVTUc4v2mI6kVUQsFBKlXvDzzmJv4HgrBrFotmuFD\nNthBxtkCgYB/slkNNcJcb0KbEFwX0QuZJOAL0m2KYSQsByIfZDyVSamPLR9CAqMA\nTEE2SUX3Pq3FcZf5nUVxqUNP7CfyjuB7jV1MGLKCBLmeXaEkzrfGXdhh/0pankM4\nnucOJohCa4G44KzT4x/qSJxIuvHbAP3euyFWjH7o9eGz9Eom9A1coQKBgHunQPXV\nWBsUO5BIq8PSoTB3iH/cF6CoQ1IQPQA0N3aTN2Ebo5dbK82lYAFKxG4Jx6Jp7uTH\n1oyBuqBtrdJk1YooSCIdUOLd0n66bRkb/YRaQ6swzaQ9TSImOPehY9vvHdytgLvZ\n4EmhMjGbv28Cu2KLCaSa18JBJzbucKApilL5AoGBALP0OodHwbbTuvKp0ghRC36A\nRZCl1MinJV79eRjVCUq4H5vlB/SqZkHhzwXEhZNkE5i/1MnALUrzrGM98MuNk/vA\n+D8nAdrbez9Z2ARKCTgkpDwQRvyXOfXl9q9OIxzmPQpfIZG33hwsIoeGCEsgzmY5\nV0qcArlMY1ZzC04LezWv\n-----END PRIVATE KEY-----\n",
+  "client_email": "vision-api-sample@pokemonpjt.iam.gserviceaccount.com",
+  "client_id": "101897806509117319213",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/vision-api-sample%40pokemonpjt.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

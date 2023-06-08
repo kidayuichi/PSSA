@@ -1,0 +1,18 @@
+.buttonContain {
+  display: flex;
+  align-items: center;
+
+  position: fixed;
+  height: 60px;
+  width: 900px;
+  top: 650px;
+  left: 100px;
+  padding: 10px;
+  z-index: 10;
+  margin-right: 50px;
+}
+
+.buttonContain input {
+  width: 400px;
+  margin-right: 50px;
+}

@@ -12,8 +12,8 @@ export default function CardDataInput() {
   const [cardID, cardIDSet] = useState("");
   const [cardNum, setInputValue] = useState("");
 
-  console.log("cardID入力: " + cardID);
-  console.log("cardNum入力: " + cardNum);
+  // console.log("cardID入力: " + cardID);
+  // console.log("cardNum入力: " + cardNum);
 
   const sendMyCard = async () => {
     let body = { userNameID: 2, possessionCardID: cardID, cardNum: cardNum };

@@ -32,7 +32,7 @@ function App() {
   };
 
   useEffect(() => {}, []);
-  console.log(damage);
+  // console.log(damage);
   return (
     <Router>
       <Routes>

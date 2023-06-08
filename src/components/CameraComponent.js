@@ -1,51 +1,119 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../styles/CameraComponent.css";
+import CardLists from "./CardLists";
 
-export default function CameraComponent() {
+const apiKey = process.env.REACT_APP_API_KEY;
+
+export default function CameraComponent(props) {
+  const { onData } = props;
+
   const videoRef = useRef(null);
-  const [CameraFlag, setCameraFlag] = useState(false);
+  const [cameraFlag, setCameraFlag] = useState(false);
 
   useEffect(() => {
-    // カメラの起動
-    navigator.mediaDevices
-      .getUserMedia({ video: CameraFlag })
-      .then((stream) => {
+    let stream = null;
+
+    const startCamera = async () => {
+      try {
+        stream = await navigator.mediaDevices.getUserMedia({ video: true });
         videoRef.current.srcObject = stream;
         console.log("カメラ起動しました。");
-      })
-      .catch((error) => {
+      } catch (error) {
         console.error("カメラの起動に失敗しました。", error);
-      });
+      }
+    };
 
-    // コンポーネントのアンマウント時にカメラを停止する
-    return () => {
-      const videoElement = videoRef.current;
-
-      if (videoElement && videoElement.srcObject) {
-        const stream = videoElement.srcObject;
-        const tracks = stream.getTracks();
-
-        tracks.forEach((track) => {
-          track.stop();
-        });
+    if (cameraFlag) {
+      startCamera();
+    } else {
+      if (stream) {
+        stream.getTracks().forEach((track) => track.stop());
+        console.log("カメラ停止しました。");
       }
       videoRef.current.srcObject = null;
-    };
-  }, [CameraFlag]);
+    }
 
-  const cameraSwitch = () => {
-    if (CameraFlag) {
-      setCameraFlag(false);
-    } else {
-      setCameraFlag(true);
+    return () => {
+      if (stream) {
+        stream.getTracks().forEach((track) => track.stop());
+      }
+    };
+  }, [cameraFlag]);
+
+  const toggleCamera = () => {
+    setCameraFlag(!cameraFlag);
+  };
+
+  const captureImage = async () => {
+    const videoElement = videoRef.current;
+    const canvas = document.createElement("canvas");
+    const context = canvas.getContext("2d");
+
+    canvas.width = videoElement.videoWidth;
+    canvas.height = videoElement.videoHeight;
+
+    context.drawImage(
+      videoElement,
+      0,
+      0,
+      videoElement.videoWidth,
+      videoElement.videoHeight
+    );
+
+    const dataURL = canvas.toDataURL("image/jpeg");
+    // console.log(dataURL);
+    // console.log(dataURL.split(",")[1]);
+
+    const requestPayload = {
+      requests: [
+        {
+          image: {
+            content: dataURL.split(",")[1],
+          },
+          features: [
+            {
+              type: "DOCUMENT_TEXT_DETECTION",
+              maxResults: 5,
+            },
+          ],
+          imageContext: {
+            languageHints: ["en"],
+          },
+        },
+      ],
+    };
+
+    try {
+      const response = await fetch(
+        `https://vision.googleapis.com/v1/images:annotate?key=${apiKey}`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(requestPayload),
+        }
+      );
+      const data = await response.json();
+      console.log("Vision APIのレスポンス:", data);
+      onData(data);
+    } catch (error) {
+      console.error("リクエストの送信に失敗しました。", error);
     }
   };
 
   return (
     <>
-      <video className="video" ref={videoRef} autoPlay />
+      <div>
+        <video ref={videoRef} autoPlay />
+      </div>
       <div className="cameraButton">
-        <button onClick={cameraSwitch}>カメラ起動</button>
+        <button onClick={toggleCamera}>
+          {cameraFlag ? "カメラ停止" : "カメラ起動"}
+        </button>
+      </div>
+      <div className="sendButton">
+        <button onClick={captureImage}>画像送信</button>
       </div>
     </>
   );
