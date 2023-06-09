@@ -19,7 +19,7 @@ export default function ButtonContainer(props) {
 
   return (
     <>
-      <div className="buttonContain">
+      {/* <div className="buttonContain">
         <input
           type="text"
           placeholder="読み取り結果"
@@ -27,7 +27,7 @@ export default function ButtonContainer(props) {
           onChange={changeText}
         />
         <button className="picSendData">データ登録</button>
-      </div>
+      </div> */}
     </>
   );
 }

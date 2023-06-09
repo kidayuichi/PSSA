@@ -4,8 +4,6 @@ import "../styles/button.css";
 export default function Button(props) {
   const { getAllPoke, tableDel } = props;
 
-  useEffect(() => {}, []);
-
   return (
     <>
       <div className="link-containerButton">

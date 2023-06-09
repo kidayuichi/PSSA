@@ -12,11 +12,6 @@ import Login from "./components/login";
 
 function App() {
   console.log(process.env);
-  const [damage, damageSet] = useState("0");
-  const [energyCost, energyCostSet] = useState("");
-  const [skillType, skillTypeSet] = useState("");
-  const [skillTypeNum, skillTypeNumSet] = useState("");
-  const [resultNum, resultNumSet] = useState("");
 
   const settings = {
     dots: true,
@@ -31,8 +26,6 @@ function App() {
     centerPadding: "520px",
   };
 
-  useEffect(() => {}, []);
-  // console.log(damage);
   return (
     <Router>
       <Routes>

@@ -6,6 +6,7 @@ const apiKey = process.env.REACT_APP_API_KEY;
 
 export default function CameraComponent(props) {
   const { onData } = props;
+  const [result, setResult] = useState("");
 
   const videoRef = useRef(null);
   const [cameraFlag, setCameraFlag] = useState(false);
@@ -97,6 +98,9 @@ export default function CameraComponent(props) {
       const data = await response.json();
       console.log("Vision APIのレスポンス:", data);
       onData(data);
+      if (data.responses && data.responses[0].fullTextAnnotation) {
+        setResult(data.responses[0].fullTextAnnotation.text.slice(-30));
+      }
     } catch (error) {
       console.error("リクエストの送信に失敗しました。", error);
     }
@@ -114,6 +118,10 @@ export default function CameraComponent(props) {
       </div>
       <div className="sendButton">
         <button onClick={captureImage}>画像送信</button>
+      </div>
+      <div className="buttonContain">
+        <input placeholder="読み取り結果" value={result} />
+        <button className="picSendData">データ登録</button>
       </div>
     </>
   );

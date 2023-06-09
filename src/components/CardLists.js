@@ -24,7 +24,7 @@ export default function CardLists() {
       <div className="HomeButton">
         <Link className="homeLink" to="/"></Link>
       </div>
-      <div className="buttonContainer"></div>
+      {/* <div className="buttonContainer"></div> */}
       <div className="link-container2">
         <CameraComponent onData={handleData} />
       </div>
